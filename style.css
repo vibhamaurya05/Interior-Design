@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background-image: url('./Assest/bgimage.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.875;
+    
+}
+/*########NAVBAR################*/
+.navbar{
+    height: 15vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img{
+    height: 3rem;
+    width:8rem;
+    margin-left: 15vh;
+}
+
+.list{
+    display: flex;
+    color:white;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+    width:45rem;    
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-left: 50vh;
+    
+}
+.list a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    
+}
+/*##########NAVBAR END###############*/
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75vh;
+    /* border: 2px solid black; */
+}
+/*#############LEFT DIV################*/
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    height: 60vh;
+    width: 85vh;
+    margin-bottom: 15vh;
+    margin-left: 10vh;
+    /* border: 2px solid black; */
+}
+.left h1{
+    font-size:3rem;
+    color:white;
+}
+.left button{
+    color: white;
+    height: 2.5rem;
+    width: 7.5rem;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+/*##############LEFT DIV END################*/
+
+/*#############RIGHT DIV START#############*/
+.right{
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    width: 85vh;
+    margin-left: 20vh;
+    /* border: 2px solid black; */
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    margin-left: 30vh;
+    margin-top: 5vh;
+    height: 24vh;
+    width: 40vh;
+    background-color: rgb(216, 213, 213);
+}
+.ver{
+    height: 3.5rem;
+    width: 0.1rem;
+    background-color: white;
+    position: absolute;
+    margin-top: 32.5vh;
+    margin-left: 30vh;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    background-color: white;
+    position: absolute;
+    margin-top: 39vh;
+    margin-left: 29vh;
+}
+.one h3{
+    color: white;
+    font-size:1.1rem;
+    margin-left: 1rem;
+
+}
+.two h3{
+    color: white;
+    font-size:1.1rem;
+    margin-left: 1rem;
+}
+.hor{
+    height: 0.2rem;
+    width: 3.5rem;
+    background-color: white;
+    position: absolute;
+    margin-bottom: 10vh;
+    margin-left: 40vh;
+}
+.circle1{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    background-color: white;
+    position: absolute;
+    margin-bottom: 10.3vh;
+    margin-left: 48vh;
+}
+
+.one .icons{
+    height: 7vh;
+    width: 17vh;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 1rem;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-top: 35vh;    
+    height: 24vh;
+    width: 40vh;
+    /* border: 2px solid black; */
+    background-color: rgb(216, 213, 213);
+}
+.two .icons{
+    height: 7vh;
+    width: 17vh;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 1rem;
+    
+}
+i{
+    height: 35px;
+    width: 35px;
+    /* border: 2px solid black; */
+    align-content: center;
+    margin-left: 2.6rem;
+    margin-top: 0.2rem;
+    font-size: 1.7rem;
+    
+}
+/*############RIGHT DIV END##############*/
+
+
+/*########### RESPONSIVE################*/
+@media screen and (max-width: 980px){
+    .navbar{
+        height: 15vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .navbar img{
+        height: 1.8rem;
+        width:5rem;
+        margin-left: 2vh;
+    }
+    .list{
+        display: flex;
+        justify-content: space-between;
+        width:110vh;
+        /* border: 2px solid blue; */
+        overflow: scroll;
+        margin-left: 15vh;
+        
+    }
+    .list a{
+        font-size: 1.2rem;
+        
+
+    }
+    .list  h3, h4{
+        font-size: 1rem;
+    }
+    .left{        
+        margin-top: 9rem;
+        /* border: 2px solid blue; */
+        
+    }
+    .left h1{        
+        font-size: 1.1rem;
+        margin-top: 3.2rem;
+        margin-left: 10vh;
+    }
+    .left button{
+        color: white;
+        height: 2rem;
+        width: 7.5rem;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 25px;
+        margin-bottom: 4rem;
+        margin-left: 10vh;
+    }
+    .right{
+        display: flex;
+        justify-content: space-between;
+        height: 60vh;
+        width: 75vh;
+        margin-left: 10vh;
+        /* border: 2px solid black; */
+    }
+
+    .one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        margin-left: -40vh;
+        margin-top: 0vh;
+        height: 20vh;
+        width: 40vh;
+        background-color: rgb(216, 213, 213);
+    }
+    .ver{
+        height: 3.5rem;
+        width: 0.1rem;
+        background-color: white;
+        position: absolute;
+        margin-top: 29vh;
+        margin-left: 30vh;
+    }
+    .circle{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        /* border: 2px solid black; */
+        background-color: white;
+        position: absolute;
+        margin-top: 37vh;
+        margin-left: 29vh;
+    }
+    .one h3{
+        color: white;
+        font-size:0.9rem;
+        margin-left: 0.5rem;
+    
+    }
+    .two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        margin-top: 47vh;   
+        margin-left: -40vh; 
+        height: 24vh;  
+        height: 20vh;
+        width: 40vh;
+        /* border: 2px solid black; */
+        background-color: rgb(216, 213, 213);
+    }
+    .two h3{
+        color: white;
+        font-size:0.9rem;
+        margin-left: 0.5rem;
+    }
+    .hor{
+        height: 0.2rem;
+        width: 3.5rem;
+        background-color: white;
+        position: absolute;
+        margin-bottom: 10vh;
+        margin-left: 40vh;
+    }
+    .circle1{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        /* border: 2px solid black; */
+        background-color: white;
+        position: absolute;
+        margin-bottom: 10.3vh;
+        margin-left: 48vh;
+    }
+
+    
+
+}
