@@ -1,200 +1,269 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: grey;
 }
-
-body{    
-    background-image: url('./Assest/bgimage.jpg');
-    height: 100vh;
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.875;
-    
-}
-/*########NAVBAR################*/
 .navbar{
-    height: 15vh;
-    /* border: 2px solid black; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 20vh;
+    /* border: 2px solid black; */
 }
-.navbar img{
-    height: 3rem;
-    width:8rem;
-    /* margin-left: 15vh; */
+.logo{
+    height: 10vh;
+    width: 25vh;
+    /* border: 2px solid black; */
 }
-
+.logo img{
+    height: 7.5vh;
+    width: 22vh;
+}
 .list{
     display: flex;
-    color:white;
     justify-content: space-evenly;
     align-items: center;
-    height: 4rem;
-    width:45rem;    
-    border-bottom: 2px solid rgb(255, 255, 255);
-    /* margin-left: 50vh; */
-    
+    height: 10vh;
+    width:110vh;    
+    text-decoration: none;
+    border-bottom: 2px solid rgb(255, 254, 254);
 }
 .list a{
     color: white;
     font-size: 1.3rem;
     text-decoration: none;
+}
+.contact{
+    color: rgb(248, 246, 246);
     
 }
-/*##########NAVBAR END###############*/
+.contact h3{
+    background-color: gray;
+    font-size: 1.5;
+}
 .main{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 75vh;
+    height: 65vh;
     /* border: 2px solid black; */
 }
-/*#############LEFT DIV################*/
 .left{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-self: center;
-    height: 60vh;
-    width: 85vh;
-    margin-bottom: 15vh;
-    margin-left: 10vh;
-    /* border: 2px solid black; */
+    height: 50vh;
+    width: 60vh;
+    /* border: 2px solid rgb(241, 67, 67); */
 }
 .left h1{
-    font-size:3rem;
-    color:white;
+    color: white;
+    font-size: 2.7rem;
 }
 .left button{
+    height: 8vh;
+    width: 21vh;
+    font-size: 1rem;
     color: white;
-    height: 2.5rem;
-    width: 7.5rem;
-    background-color: transparent;
     border: 2px solid white;
-    border-radius: 25px;
+    border-radius: 30px;
 }
-/*##############LEFT DIV END################*/
 
-/*#############RIGHT DIV START#############*/
 .right{
     display: flex;
-    justify-content: space-between;
-    height: 70vh;
-    width: 85vh;
-    margin-left: 20vh;
-    /* border: 2px solid black; */
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: end;
+    height: 60vh;
+    width: 90vh;
+    /* border: 2px solid rgb(245, 60, 60); */
 }
+
 .one{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-self: center;    
+    height: 20vh;
+    width: 45vh;
+    background-color: rgb(196, 195, 195);
+    /* border: 2px solid black; */
+    position: relative;
+    margin-bottom: 40vh;
     
-    margin-left: 30vh;
-    margin-top: 5vh;
-    height: 24vh;
-    width: 40vh;
-    background-color: rgb(216, 213, 213);
-}
-.ver{
-    height: 3.5rem;
-    width: 0.1rem;
-    background-color: white;
-    position: absolute;
-    margin-top: 32.5vh;
-    margin-left: 30vh;
-}
-.circle{
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    /* border: 2px solid black; */
-    background-color: white;
-    position: absolute;
-    margin-top: 39vh;
-    margin-left: 29vh;
-}
-.one h3{
-    color: white;
-    font-size:1.1rem;
-    margin-left: 1rem;
-
-}
-.two h3{
-    color: white;
-    font-size:1.1rem;
-    margin-left: 1rem;
-}
-.hor{
-    height: 0.2rem;
-    width: 3.5rem;
-    background-color: white;
-    position: absolute;
-    margin-bottom: 10vh;
-    margin-left: 40vh;
-}
-.circle1{
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    /* border: 2px solid black; */
-    background-color: white;
-    position: absolute;
-    margin-bottom: 10.3vh;
-    margin-left: 48vh;
-}
-
-.one .icons{
-    height: 7vh;
-    width: 17vh;
-    /* border: 2px solid black; */
-    background-color: white;
-    border-radius: 25px;
-    margin-left: 1rem;
 }
 .two{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    position: absolute;
-    margin-top: 35vh;    
-    height: 24vh;
-    width: 40vh;
+    align-self: center;    
+    height: 20vh;
+    width: 45vh;
+    background-color: rgb(196, 195, 195);
     /* border: 2px solid black; */
-    background-color: rgb(216, 213, 213);
+    position: relative;
+    margin-top: 40vh;
 }
-.two .icons{
-    height: 7vh;
-    width: 17vh;
-    /* border: 2px solid black; */
-    background-color: white;
+
+.icons{
+    height: 40px;
+    width: 80px;
+    border: 2px solid white;
     border-radius: 25px;
-    margin-left: 1rem;
-    
+    background-color: white;
+}
+.one, .two, h3{
+    background-color: rgb(196, 195, 195);
 }
 i{
-    height: 35px;
-    width: 35px;
+    font-size: 1.5rem;
+    background-color: white;
+    margin-top: 0.5rem;
+    margin-left: 1.8rem;
+}
+.right .ver{
+    height: 3rem;
+    width: 0.2rem;
     /* border: 2px solid black; */
-    align-content: center;
-    margin-left: 2.6rem;
-    margin-top: 0.2rem;
-    font-size: 1.7rem;
+    background-color: white;
+    position: absolute;
+    margin-bottom: 13rem;    
+    margin-left: 30rem;
+    
+
+}
+.right .circle-one{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin-bottom: 12rem;    
+    margin-left: 30rem;
     
 }
-/*############RIGHT DIV END##############*/
-
-
-/*########### RESPONSIVE################*/
-@media screen and (max-width: 980px){
+.right .hor{
+    height: 0.2rem;
+    width: 3rem;
+    background-color: white;
+    position: absolute;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+.right .circle-two{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin-bottom: 1.5rem;    
+    margin-left: 6rem;
+    
+}
+/*############# RESPONSIVENESS#############*/
+@media screen and (max-width:960px) {
+    
     .navbar{
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        overflow: scroll;
+        gap: 3rem;
+        align-items: center;
+        height: 20vh;
+        overflow-x: scroll;
+    }
+    .logo{
+        height: 8vh;
+        width: 23vh;
+        /* border: 2px solid black; */
+        position: relative;
+    }
+    .logo img{
+        height: 6vh;
+        width: 18vh;
     }
     .list{
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8vh;
+        width:110vh;
+        gap: 2rem;
+        /* border: 2px solid black; */
     }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+        /* border: 2px solid black; */
+        
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 18vh;
+        width: 45vh;
+        position: absolute;
+        margin-left: 2rem;
+        z-index: 1;
+        /* border: 2px solid rgb(241, 67, 67); */
+    }
+    .left h1{
+        color: white;
+        font-size: 1.8rem;
+
+        
+    }
+    .left button{
+        height: 6vh;
+        width: 18vh;
+        font-size: 0.8rem;
+        color: white;
+        border: 2px solid white;
+        border-radius: 30px;
+        
+        
+    }
+   
+    .right{
+        height: 75vh;
+        width: 140vh;
+        /* border: 2px solid rgb(252, 60, 60); */
+        position: relative;
+        /* margin-left: 15vh; */
+        justify-content: space-between;
+    }
+    
+    .one{
+        margin-top: -18rem;
+        margin-left: -16rem;
+        margin-right: 2.5rem;
+       position: relative;
+        
+    }
+    .two{        
+        margin-top: 22rem;
+        margin-right: 2.5rem;
+        position: absolute;
+        /* margin-left: 5rem; */
+    }
+    
+    .icons{
+        height: 40px;
+        width: 80px;
+        border: 2px solid white;
+        border-radius: 25px;
+        background-color: white;
+    }
+    .one, .two, h3{
+        background-color: rgb(196, 195, 195);
+    }
+    i{
+        font-size: 1.5rem;
+        background-color: white;
+        margin-top: 0.5rem;
+        margin-left: 1.8rem;
+    }
+    
 }
